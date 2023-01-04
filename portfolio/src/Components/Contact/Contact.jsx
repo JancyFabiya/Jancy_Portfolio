@@ -39,7 +39,8 @@ const Contact = () => {
             </div>
         </div>
         <div className="c-right">
-            <form ref={form} onSubmit={sendEmail}>
+            {/* <form ref={form} onSubmit={sendEmail}> */}
+            <form method="POST" action="https://getform.io/f/68b40e03-0e97-4331-8339-a89016ef8889" >
                 <input type="text" name='user_name' className='user' placeholder='Name' />
                 <input type="email" name='user_email' className='user' placeholder='Email' />
                 <textarea name='message' className='user' placeholder='Message' />

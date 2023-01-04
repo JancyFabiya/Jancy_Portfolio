@@ -8,6 +8,7 @@ import Facebook from "../../img/mongodb.png";
 import { themeContext } from "../../Context";
 import { useContext } from "react";
 import { motion } from "framer-motion";
+import {Link} from "react-scroll";
 
 const Works = () => {
   const theme = useContext(themeContext);
@@ -25,7 +26,10 @@ const Works = () => {
           and also know SQL database.          <br />
           l can do HTML and CSS responsive websites for
           you.<br/>Also iam doing these...        </span>
+          <Link to="contact" spy={true} smooth={true}>
+
         <button className="button s-button">Hire me</button>
+        </Link>
         <div className="blur s-blur1" style={{ background: "#ABF1FF94" }}></div>
       </div>
       {/* right side */}
